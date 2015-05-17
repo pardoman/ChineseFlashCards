@@ -1,0 +1,19 @@
+.wrapper {
+    text-align: center;
+}
+
+#guessWord {
+    display: inline-block;
+    font-size: 6em;
+}
+#btnShow {
+    display: inline-block;
+}
+#answerPinyin {
+    display: inline-block;
+    font-size: 5em;
+}
+#answerChinese {
+    display: inline-block;
+    font-size: 5em;
+}

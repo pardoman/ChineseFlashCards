@@ -1,0 +1,20 @@
+{
+  "adjectives": [
+    ["Big", "dà", "大"],
+    ["Small", "xiǎo", "小"],
+    ["Tall", "gāo", "高"],
+    ["Short", "ǎi", "矮"],
+    ["Pretty", "piàoliang", "漂亮"],
+    ["Beautiful", "měi", "美"],
+    ["Ugly", "chǒu", "丑"],
+    ["Good-Looking", "hǎokàn", "好看"],
+    ["Unattractive", "nánkàn", "难看"],
+    ["Sad", "nánguò", "难过"],
+    ["Fat", "pàng", "胖"],
+    ["Thin", "shòu", "瘦"],
+    ["Difficult", "nán", "难"],
+    ["Easy", "róngyì", "容易"],
+    ["Intelligent", "cōngmíng", "聪明"],
+    ["Stupid", "bèn", "笨"]
+  ]
+}
