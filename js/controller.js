@@ -57,16 +57,37 @@
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "lang/chinese.json", true);
             xhr.onload = function() {
-                fetchingData.style.display = "none";
-                playTime.style.display = "block";
-                var dataSource = JSON.parse(xhr.response);
-                mDataSource = dataSource.adjectives;
-                next();
+                setDataSource(JSON.parse(xhr.response));
+                beginPlay();
             };
             xhr.onerror = function() {
                 alert("Error fetching data.");
             };
             xhr.send();
+        }
+
+        function beginPlay() {
+            fetchingData.style.display = "none";
+            playTime.style.display = "block";
+            next();
+        }
+
+        function setDataSource(dataSource) {
+
+            mDataSource = [];
+
+            // Iterate over all categories, add all words to a common list
+            dataSource.categories.forEach(function(categoryData){
+                var dataKey = categoryData[0];
+                // var dataLabel = categoryData[1];
+
+                var categoryWords = dataSource[dataKey];
+                if (!categoryWords) {
+                    return;
+                }
+
+                mDataSource = mDataSource.concat(categoryWords);
+            });
         }
 
         function next() {
