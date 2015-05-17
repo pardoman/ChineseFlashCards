@@ -51,7 +51,7 @@
 
         function fetchData() {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "data.json", true);
+            xhr.open("GET", "lang/chinese.json", true);
             xhr.onload = function() {
                 var dataSource = JSON.parse(xhr.response);
                 mDataSource = dataSource.adjectives;
