@@ -1,15 +1,27 @@
 {
   "categories": [
     ["pronouns", "Personal Pronouns"],
+    ["tobe", "To Be"],
     ["adjectives", "Adjectives"]
   ],
   "pronouns":[
     ["I (me)", "wo3", "我"],
     ["You", "ni3", "你"],
-    ["He/She/It", "ta1", "他/她/它"],
+    ["He / She / It", "ta1", "他 / 她 / 它"],
     ["We", "wo3men", "我们"],
     ["You all", "ni3men", "你们"],
-    ["They", "ta1men", "他们/她们/它们"]
+    ["They", "ta1men", "他们 / 她们 / 它们"]
+  ],
+  "tobe":[
+    ["To be", "shi4", "是"],
+    ["Not", "bu4", "不"],
+    ["Is / Are / Was not", "bu2 shi4", "不是"],
+    ["I am", "wo3 shi1", "我是"],
+    ["You are", "ni3 shi4", "你是"],
+    ["He / She / It is", "ta1 shi4", "他是 / 她是 / 它是"],
+    ["We are", "wo3men shi4", "我们是"],
+    ["You [all] are", "ni3men shi4", "你们是"],
+    ["They are", "ta1men shi4", "他们是 / 她们是 / 它们是"]
   ],
   "adjectives": [
     ["Big", "dà", "大"],
