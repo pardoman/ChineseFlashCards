@@ -11,17 +11,25 @@
 
 <body onload="CFC.start()">
 
-    <div class="wrapper">
-        <h1 id="guessWord">Loading...</h1>
+    <div class="loading">
+        <div class="wrapper">
+            <h1 id="fetchingData">Fetching data...</h1>
+        </div>
     </div>
-    <div class="wrapper">
-        <button id="btnShow">SHOW</button>
-    </div>
-    <div class="wrapper">
-        <h1 id="answerPinyin"></h1>
-    </div>
-    <div class="wrapper">
-        <h1 id="answerChinese"></h1>
+
+    <div id="playTime">
+        <div class="wrapper">
+            <h1 id="guessWord">WORD TO GUESS GOES HERE</h1>
+        </div>
+        <div class="wrapper">
+            <button id="btnShow">SHOW</button>
+        </div>
+        <div class="wrapper">
+            <h1 id="answerPinyin">ANSWER PINYIN</h1>
+        </div>
+        <div class="wrapper">
+            <h1 id="answerChinese">ANSWER 中文</h1>
+        </div>
     </div>
 
 </body>

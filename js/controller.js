@@ -17,7 +17,9 @@
             NEXT_NEW_WORD = 1;
 
         // DOM elements
-        var guessWord,
+        var playTime,
+            fetchingData,
+            guessWord,
             answerPinyin,
             answerChinese,
             btnShow;
@@ -31,6 +33,8 @@
         function start(){
 
             // Gather DOM elements
+            playTime = document.getElementById("playTime");
+            fetchingData = document.getElementById("fetchingData");
             guessWord = document.getElementById("guessWord");
             answerPinyin = document.getElementById("answerPinyin");
             answerChinese = document.getElementById("answerChinese");
@@ -53,6 +57,8 @@
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "lang/chinese.json", true);
             xhr.onload = function() {
+                fetchingData.style.display = "none";
+                playTime.style.display = "block";
                 var dataSource = JSON.parse(xhr.response);
                 mDataSource = dataSource.adjectives;
                 next();
